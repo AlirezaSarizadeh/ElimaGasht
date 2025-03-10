@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: PeydaWebFaNum !important;
+  text-wrap: nowrap;
+}
+
+.w {
+  width: 100%;
+}
+.h {
+  height: 100%;
+}
+.f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b {
+  border: 1px white;
+  border-style: solid;
+}
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.t {
+  transition: all;
+  transition-duration: 300ms;
+}
+.rotate {
+  transform: rotate(360deg);
+}
+.rotateI {
+  transform: rotate(180deg);
+}
+.swiper-button-next {
+  color: #ff5733; /* Choose your desired color */
+  margin-left: 30px;
+}
+
+/* Change color of the previous button */
+.swiper-button-prev {
+  color: #ff5733; /* Choose your desired color */
+  margin-right: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5ecde;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle when clicked and dragged */
+::-webkit-scrollbar-thumb:active {
+  background: #ff7759; /* Change to any color you like */
+}
+.rmdp-week-day {
+  color: #d94500 !important;
+  cursor: default !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+.rmdp-day {
+  color: white !important;
+  cursor: pointer !important;
+  height: 34px !important;
+  position: relative !important;
+  width: 34px !important;
+}
+.rmdp-header-values {
+  color: white !important;
+  margin: auto !important;
+}
+.rmdp-arrow-container:hover {
+  background-color: #d94500 !important;
+  box-shadow: 0 0 0 #d94500 !important;
+}
+.rmdp-arrow-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-bottom: 5px !important;
+}
+.ep-arrow {
+  display: none !important;
+}
+.rmdp-arrow {
+  border: solid #d94500 !important;
+  border-width: 0 2px 2px 0 !important;
+  display: inline-block !important;
+  height: 3px !important;
+  margin-top: 5px !important;
+  padding: 2px !important;
+  width: 3px !important;
+}
+
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #d94500 !important;
+  box-shadow: 0 0 3px #8798ad !important;
+  color: #fff !important;
+}
+.rmdp-day.rmdp-today span {
+  background-color: #ff7759 !important;
+  color: #fff !important;
+}
+@media (hover: hover) {
+  .rmdp-day:not(.rmdp-disabled, .rmdp-day-hidden) span:hover {
+    background-color: #ff7759 !important;
+    color: #fff !important;
+  }
+}
+.rmdp-shadow {
+  box-shadow: 0 0 5px rgb(180, 180, 180) !important;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none; /* Remove default style */
+  width: 30px;
+  height: 30px;
+  background: url("https://www.svgrepo.com/show/499592/close-x.svg") no-repeat
+    center;
+  background-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+input[type="search"]::-webkit-search-cancel-button:hover {
+  opacity: 1;
+}
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 100;
+  src: url("public/font/PeydaWebFaNum-Thin.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-Thin.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 200;
+  src: url("public/font/PeydaWebFaNum-ExtraLight.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url("fonts/woff/PeydaWebFaNum-ExtraLight.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 300;
+  src: url("public/font/PeydaWebFaNum-Light.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-Light.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 500;
+  src: url("public/font/PeydaWebFaNum-Medium.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-Medium.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 600;
+  src: url("public/font/PeydaWebFaNum-SemiBold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-SemiBold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 800;
+  src: url("public/font/PeydaWebFaNum-ExtraBold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url("fonts/woff/PeydaWebFaNum-ExtraBold.woff") format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: 900;
+  src: url("public/font/PeydaWebFaNum-Black.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-Black.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: bold;
+  src: url("public/font/PeydaWebFaNum-Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-Bold.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+  font-family: PeydaWebFaNum;
+  font-style: normal;
+  font-weight: normal;
+  src: url("public/font/PeydaWebFaNum-Regular.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("fonts/woff/PeydaWebFaNum-Regular.woff")
+      format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+input:focus {
+  outline: none;
+}
+.taghvim {
+  background: transparent;
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1000xp;
+  color: white !important;
+  text-align: center !important; 
+  padding-left: 20px;
+}
+.rmdp-container{
+  width: inherit !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+ 
+}
+
+::placeholder {
+  color: #e4e4e7 !important;
+  opacity: 0.8 !important;
+}
+.taghviMo {
+  background: transparent;
+  width: inherit ;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white !important;
+  text-align: center !important; 
+  border: 1px solid white;
+  border-radius: 12px;
+   transition: all 200ms;
+  pointer-events: none;
+}
+.taghviMo:focus {
+ border: 1px solid orangered;
+
+}
